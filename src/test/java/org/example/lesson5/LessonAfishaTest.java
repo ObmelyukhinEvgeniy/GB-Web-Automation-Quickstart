@@ -83,7 +83,7 @@ public class LessonAfishaTest {
 
     @AfterEach
     void ternDown() {
-        driver.manage().deleteAllCookies();
+        //driver.manage().deleteAllCookies();
         driver.quit();
     }
 
