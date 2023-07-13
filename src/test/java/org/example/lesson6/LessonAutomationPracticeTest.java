@@ -43,15 +43,20 @@ public class LessonAutomationPracticeTest {
         LessonLoginPage lessonLoginPage = new LessonLoginPage(driver);
         lessonLoginPage.login("polozhitelnyy88@mail.ru", "z123456");
         Thread.sleep(3000);
+
         //Сокращённый вариант записи
         new LessonMyAccountPage(driver).clickLinkTShirts();
         Thread.sleep(3000);
+
         new LessonTShirtsPage(driver).selectSize("S");
         Thread.sleep(3000);
+
         new LessonTShirtsPage(driver).selectPrice(75);
         Thread.sleep(3000);
+
         new LessonTShirtsPage(driver).addProductCart();
         Thread.sleep(3000);
+
         //new LessonBannerCart(driver).checkAssert();
         new LessonTShirtsPage(driver).checkTest();
     }
